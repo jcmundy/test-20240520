@@ -1,0 +1,52 @@
+author:
+  email: null
+  name: An Author
+  twitter: null
+  url: null
+baseurl: /test-20240520
+collections:
+  annotations:
+    output: true
+    permalink: /annotations/:path/
+  volume_pages:
+    output: true
+    permalink: /pages/:path/
+defaults:
+- scope:
+    path: ''
+    type: volume_pages
+  values:
+    deep_zoom: true
+    extra_js:
+    - openseadragon.min.js
+    - openseadragon-svg-overlay.js
+    - text-annotations.js
+    - viewer.js
+    layout: volume_page
+    short_label: p.
+- scope:
+    path: ''
+    type: annotations
+  values:
+    layout: annotation
+description: An annotated digital edition created with <a href="http://readux.library.emory.edu/">Readux</a>
+gems:
+- jekyll-sitemap
+homepage_image: https://iip.readux.io/iiif/2/tsnhf_00000001.tif/full/full/0/default.jpg
+image_size:
+  page:
+    height: 4800
+    width: 6000
+permalink: pretty
+publication_info:
+  date: '2024'
+  editors: []
+  title: Flight Plan Vol. 1
+show_annotation_author: true
+source_info:
+  title: Flight Plan Vol. 1
+  via_readux: true
+tagline: an annotated digital edition
+title: Flight Plan Vol. 1
+url: https://jcmundy.github.io
+version: 0.7
